@@ -84,5 +84,6 @@ header {
 }
 
 .button-container:hover {
-    color: #2a2a2a;
+  color: #2a2a2a;
+  background: #ffffffaf;
 }
