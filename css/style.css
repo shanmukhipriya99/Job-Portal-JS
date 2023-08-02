@@ -13,7 +13,7 @@ body {
 
 header {
   height: 100px;
-  background: #fff;
+  background: #ffffffeb;
   color: #2a2a2a;
   margin-bottom: 25px;
   position: relative;
@@ -50,6 +50,7 @@ header {
   overflow: hidden;
   background: #1c1c24;
   height: 60px;
+  margin-bottom: 25px;
 }
 
 .search-container .input-container {
@@ -81,9 +82,62 @@ header {
   padding: 2%;
   background: #7045af;
   cursor: pointer;
+  transition: all .5s ease;
 }
 
 .button-container:hover {
   color: #2a2a2a;
   background: #ffffffaf;
+}
+
+.jobs-list {
+  max-width: 1250px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+.jobs-list h1 {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.jobs-container {
+  display: grid;
+  flex-grow: 1;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.job-tile {
+  background: #7045af;
+  border: 2px solid #2a2a2a;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  transition: all .5s ease;
+}
+
+.job-tile:hover {
+    background: #ffffff2c;
+    transform: scale(1.05, 1.05);
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #2a2a2a;
+    border-radius:30px;
 }
