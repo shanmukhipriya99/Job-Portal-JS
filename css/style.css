@@ -191,3 +191,15 @@ header {
   background: #fff;
   color: #1c1c24;
 }
+
+@media screen and (max-width: 940px) {
+  .jobs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jobs-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
