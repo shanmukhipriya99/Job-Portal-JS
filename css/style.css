@@ -82,7 +82,7 @@ header {
   padding: 2%;
   background: #7045af;
   cursor: pointer;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .button-container:hover {
@@ -107,8 +107,8 @@ header {
 
 .jobs-container {
   display: grid;
-  flex-grow: 1;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -119,25 +119,75 @@ header {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 30px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .job-tile:hover {
-    background: #ffffff2c;
-    transform: scale(1.05, 1.05);
+  background: #ffffff2c;
+  transform: scale(1.05, 1.05);
 }
 
 .top {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top img {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #2a2a2a;
-    border-radius:30px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #2a2a2a;
+  border-radius: 10px;
+}
+
+.role-name {
+  padding: 20px 0;
+}
+
+.role-name span {
+  font-size: 22px;
+}
+
+.description {
+  height: 105px;
+  overflow: hidden;
+  flex-grow: 1;
+  font-size: 16px;
+  color: #ffffffad;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 45px;
+}
+
+.button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  transform: scale(1.1, 1.1);
+  background: #7045af;
+}
+
+.button.apply-now {
+  background: #2a2a2a;
+  margin-right: 15px;
+}
+
+.button.apply-now:hover {
+  background: #fff;
+  color: #1c1c24;
 }
